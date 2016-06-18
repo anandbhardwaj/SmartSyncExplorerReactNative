@@ -1,0 +1,1 @@
+../../../../../../external/ios/libs/SalesforceReact/SalesforceReact/Classes/SFSmartSyncReactBridge.h

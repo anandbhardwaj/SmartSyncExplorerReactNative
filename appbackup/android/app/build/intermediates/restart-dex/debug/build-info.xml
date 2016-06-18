@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="420dpi"
+    format="7"
+    timestamp="34762160386331"
+    token="-6020950456441535217" >
+
+    <task
+        name="javac"
+        duration="783" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="1835" />
+    <task
+        name="verifier"
+        duration="608" />
+
+    <artifact
+        location="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="34762160386331" >
+        <artifact
+            location="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

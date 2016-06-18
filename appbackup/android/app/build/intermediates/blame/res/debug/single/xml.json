@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.20.1/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/res/merged/debug/xml/authenticator.xml",
+        "source": "/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/SmartSyncExplorerReactNative.libs/SalesforceSDK/unspecified/res/xml/authenticator.xml"
+    },
+    {
+        "merged": "/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/res/merged/debug/xml/app_restrictions.xml",
+        "source": "/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/SmartSyncExplorerReactNative.libs/SalesforceSDK/unspecified/res/xml/app_restrictions.xml"
+    },
+    {
+        "merged": "/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/res/merged/debug/xml/servers.xml",
+        "source": "/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/SmartSyncExplorerReactNative.libs/SalesforceSDK/unspecified/res/xml/servers.xml"
+    }
+]

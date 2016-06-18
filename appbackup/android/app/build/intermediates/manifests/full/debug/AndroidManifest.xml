@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.salesforce.samples.smartsyncexplorerreactnative"
+    android:installLocation="internalOnly"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- TODO: Remove the -sdk-23 tag when the minsdk version is 23 -->
+    <uses-permission-sdk-23 android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name="com.salesforce.samples.smartsyncexplorerreactnative.SmartSyncExplorerReactNativeApp"
+        android:icon="@drawable/sf__icon"
+        android:label="@string/app_name"
+        android:manageSpaceActivity="com.salesforce.androidsdk.ui.ManageSpaceActivity" >
+
+        <!-- Launcher screen -->
+        <activity
+            android:name="com.salesforce.samples.smartsyncexplorerreactnative.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+        <!-- SmartStore Inspector screen -->
+        <activity android:name="com.salesforce.androidsdk.smartstore.ui.SmartStoreInspectorActivity" /> <!-- Metadata for supported app restrictions -->
+        <meta-data
+            android:name="android.content.APP_RESTRICTIONS"
+            android:resource="@xml/app_restrictions" /> <!-- Service required for authentication -->
+        <service
+            android:name="com.salesforce.androidsdk.auth.AuthenticatorService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service> <!-- Login activity -->
+        <activity
+            android:name="com.salesforce.androidsdk.ui.LoginActivity"
+            android:theme="@style/SalesforceSDK.ActionBarTheme" /> <!-- Passcode activity -->
+        <activity
+            android:name="com.salesforce.androidsdk.ui.PasscodeActivity"
+            android:theme="@style/SalesforceSDK.ActionBarTheme" /> <!-- Manage space activity -->
+        <activity
+            android:name="com.salesforce.androidsdk.ui.ManageSpaceActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/SalesforceSDK.ActionBarTheme" /> <!-- Choose server activity -->
+        <activity
+            android:name="com.salesforce.androidsdk.ui.ServerPickerActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/SalesforceSDK.ActionBarTheme" /> <!-- Account switcher activity -->
+        <activity
+            android:name="com.salesforce.androidsdk.ui.AccountSwitcherActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/SalesforceSDK.ActionBarTheme" />
+        <!--
+            Push notification services and receivers. The 'category' attribute
+            here should match the <app-package-name> attribute.
+        -->
+        <receiver
+            android:name="com.salesforce.androidsdk.push.PushBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.salesforce.androidsdk" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.salesforce.androidsdk" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.salesforce.androidsdk.push.PushService$RetryRegistrationAlarmReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="com.salesforce.androidsdk.push.PushService$SFDCRegistrationRetryAlarmReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="com.salesforce.androidsdk.push.PushService$UnregisterRetryAlarmReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.salesforce.androidsdk.push.PushService"
+            android:exported="false" />
+    </application>
+
+</manifest>

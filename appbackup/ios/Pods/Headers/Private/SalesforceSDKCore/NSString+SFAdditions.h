@@ -1,0 +1,1 @@
+../../../../../../external/ios/libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/NSString+SFAdditions.h

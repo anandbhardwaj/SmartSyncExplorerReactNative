@@ -1,0 +1,1 @@
+../../../../../../external/ios/libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/NSData+SFSDKUtils_Internal.h

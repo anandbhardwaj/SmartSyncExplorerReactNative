@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-ws/2.5.0/e9753b7dcae5deca92e871c5c759067070b07bc/okhttp-ws-2.5.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="0e9753b7dcae5deca92e871c5c759067070b07bc">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-ws-2.5.0_427ed2a752102a0394ce168d2c940ff3a5a3b50c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.0.1_fcd1d8518c559bf37ceef30bb654e8faca4f0a31/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_f3b1eb9d517dc32e0caadee1302d5a178166579e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.8.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="845a5b3a624946b2068963ba656c117fc453701c">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fresco-drawee-0.8.1_5bf0f9ee0db38ef9af33211959f0b53a771d6069/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.2.3_d3a75c7122cfe7e4195f11d4a2bfd78222bd3b1b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-2.5.0_ffe534768a62d864373ea764e574a931dc3b5e73/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.1_415afde21db2c6628ca88824b4338894f333876f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.8.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="4af24c040b21980e0a80a505816c648e36705bd9">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fresco-fbcore-0.8.1_75ec8d1d1b652a7cd62cce78e83a8a54704d9989/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.8.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="3836ecca4e31e18ea8fbae8e822d49777b0db4f7">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fresco-imagepipeline-0.8.1_0b386cbc6fe67bdd45a39f36ae3598b0b99ae9b9/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.8.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="9178570a3a28c95fabd3bc746cd68efe99ad2b47">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fresco-fresco-0.8.1_880fbb9ccf66911ac7123d02542349985c61cac2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho/1.2.0/1d6cdb8ce8185b8b23213fad48a83987fb6d2d67/stetho-1.2.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1d6cdb8ce8185b8b23213fad48a83987fb6d2d67">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/stetho-1.2.0_0743e10c1b5fa70b3e7727e498fb5d7fdb7713a4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/SmartSyncExplorerReactNative.libs/SmartStore/unspecified/jars/libs/sqlcipher.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="b1bb2c617a0b7a1fcf35abe94e2b1009f1882155">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/8/sqlcipher_c951fdb31cd9030fced8589ffc06083b7db27e15/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_828b37c5e5e86f7edeb397ec69d31bda3a848c35/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_6d73075efd5eb541378d456595ea105cde39540c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-android-1.1.4_fa7196174e3c22fd255ac2e96cbb20d5fa5329e3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/jsr305-3.0.0_d9d13b1f3d18173d2ace333736c431591f326946/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="bc5739068a9beb3a2d4aeee5f8ba3a88d1e847f1">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ff92f02b70b0668e6ecac8cdbf4bb1557924cfc9/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho-okhttp/1.2.0/6c5c9380e245c4ff5be2b2a49dcbb0200c39798e/stetho-okhttp-1.2.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="6c5c9380e245c4ff5be2b2a49dcbb0200c39798e">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/stetho-okhttp-1.2.0_b03a62cb3ca7b1fadaa3cf1616dba11490f1ac26/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-cli-1.2_6b95cee4f68be8d457457f26823e3a56d6c681f3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d8628bbff912991f08e12eea8f2c2890b2ddfad7">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b05057ea894548454932ee4c0ee5391919ae4f6f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.20.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="2c06af8f68934cbbbc1153a5ab0064483e6ac692">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.react-react-native-0.20.1_51c4a651bfff7ba5e67dba3b557477af533e245a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.20.1/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="ffc64da9d9261e18ebc8b5e814f3d6a39aa6cbbe">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/infer-annotations-1.5_31210588cc3335f07d47c9fddae2f1ddfdb682df/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.0.1_9f575e26be198fbcfff012b0cf6093b7c6f999cb/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.0.1_e2162c35b1581ae7948255378408f078028f980e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/library-2.4.0_77ac9bc6eba597268f3eff26c999cd86920b82bc/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/guava-18.0_9e51be79373a758f2d238345c67e1efef3ce5a67/classes.dex" />
+    </item>
+    <item
+        jar="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp/0.8.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="0d5d69b03cb7d68b81543f6483ed04ccb0e2235b">
+        <dex dex="/Users/anandbhardwaj/Documents/Work/react_native/SmartSyncExplorerReactNative/app/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fresco-imagepipeline-okhttp-0.8.1_a641bbb7670c538293e37313b939a37f5e278c38/classes.dex" />
+    </item>
+
+</items>
