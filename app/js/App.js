@@ -42,7 +42,7 @@ var storeMgr = require('./StoreMgr');
 var SearchScreen = require('./SearchScreen');
 var ContactScreen = require('./ContactScreen');
 var contactScreenInstance;
-var contactStore = new storeMgr();
+var contactStore = storeMgr.contactStore();
 
 // Nav bar components
 var NavButton = React.createClass({

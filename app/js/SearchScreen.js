@@ -25,15 +25,16 @@
  */
 
 'use strict';
-
-const ContactCell = require('ContactCell.react');
 var React = require('react-native');
-const SearchBar = require('SearchBar.react');
+const ContactCell = require('./ContactCell');
+
+const SearchBar = require('./SearchBar');
 var Subscribable = require('Subscribable');
 
 var dismissKeyboard = require('dismissKeyboard');
 var storeMgr = require('./StoreMgr');
-var contactStore = new storeMgr();
+var contactStore = storeMgr.contactStore();
+
 var {
     Platform,
     StyleSheet,

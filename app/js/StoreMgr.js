@@ -29,34 +29,38 @@ var EventEmitter = require('./events');
 var smartstore = require('./react.force.smartstore');
 var smartsync = require('./react.force.smartsync');
 
-function ObjectStorage() {
+function ObjectStore(options) {
     this.syncInFlight = false;
     this.syncDownId;
     this.lastStoreQuerySent = 0;
     this.lastStoreResponseReceived = 0;
     this.eventEmitter = new EventEmitter();
     this.SMARTSTORE_CHANGED = "smartstoreChanged";
-    this.fieldlist = ["Id", "FirstName", "LastName", "Title", "Email", "MobilePhone", "Department", "HomePhone", "LastModifiedDate"];
-    this.objectName = "Contact";
-    this.recordLimit = 10000;
-    this.soupName = "contacts";
+    //Setting the needed values in the DataStore
+    this.fieldlist = options.fieldlist;
+    this.objectName = options.objectName;
+    this.soupName = options.soupName;
+    this.recordLimit = options.soupName || 10000;
 }
 
-ObjectStorage.prototype.emitSmartStoreChanged = function() {
-    eventEmitter.emit(SMARTSTORE_CHANGED, {});
+ObjectStore.prototype.emitSmartStoreChanged = function() {
+    this.eventEmitter.emit(this.SMARTSTORE_CHANGED, {});
 }
 
-ObjectStorage.prototype.syncDown = function(callback) {
-    if (syncInFlight) {
+ObjectStore.prototype.syncDown = function(callback) {
+    if (this.syncInFlight) {
         console.log("Not starting syncDown - sync already in fligtht");
         return;
     }
     console.log("Starting syncDown");
 
-    syncInFlight = true;
+    this.syncInFlight = true;
+    var fields = this.fieldlist.slice(0);
+    fields.push("Id");
+    fields.push("LastModifiedDate");
     var target = {
         type: "soql",
-        query: "SELECT " + this.fieldlist.join(",") + " FROM " + this.objectName + " LIMIT " + this.recordLimit
+        query: "SELECT " + fields.join(",") + " FROM " + this.objectName + " LIMIT " + this.recordLimit
     };
     smartsync.syncDown(false,
         target,
@@ -64,47 +68,47 @@ ObjectStorage.prototype.syncDown = function(callback) {
             mergeMode: smartsync.MERGE_MODE.OVERWRITE
         },
         (sync) => {
-            syncInFlight = false;
-            syncDownId = sync._soupEntryId;
+            this.syncInFlight = false;
+            this.syncDownId = sync._soupEntryId;
             console.log("sync==>" + sync);
-            emitSmartStoreChanged();
+            this.emitSmartStoreChanged();
             if (callback) callback(sync);
         },
         (error) => {
-            syncInFlight = false;
+            this.syncInFlight = false;
         }
     );
 }
 
-ObjectStorage.prototype.reSync = function(callback) {
-    if (syncInFlight) {
+ObjectStore.prototype.reSync = function(callback) {
+    if (this.syncInFlight) {
         console.log("Not starting reSync - sync already in fligtht");
         return;
     }
 
     console.log("Starting reSync");
-    syncInFlight = true;
+    this.syncInFlight = true;
     smartsync.reSync(false,
-        syncDownId,
+        this.syncDownId,
         (sync) => {
-            syncInFlight = false;
-            emitSmartStoreChanged();
+            this.syncInFlight = false;
+            this.emitSmartStoreChanged();
             if (callback) callback(sync);
         },
         (error) => {
-            syncInFlight = false;
+            this.syncInFlight = false;
         }
     );
 }
 
-ObjectStorage.prototype.syncUp = function(callback) {
-    if (syncInFlight) {
+ObjectStore.prototype.syncUp = function(callback) {
+    if (this.syncInFlight) {
         console.log("Not starting syncUp - sync already in fligtht");
         return;
     }
 
     console.log("Starting syncUp");
-    syncInFlight = true;
+    this.syncInFlight = true;
     var fieldlist = ["FirstName", "LastName", "Title", "Email", "MobilePhone", "Department", "HomePhone"];
     smartsync.syncUp(false, {},
         this.soupName, {
@@ -112,16 +116,16 @@ ObjectStorage.prototype.syncUp = function(callback) {
             fieldlist: fieldlist
         },
         (sync) => {
-            syncInFlight = false;
+            this.syncInFlight = false;
             if (callback) callback(sync);
         },
         (error) => {
-            syncInFlight = false;
+            this.syncInFlight = false;
         }
     );
 }
 
-ObjectStorage.prototype.syncData = function() {
+ObjectStore.prototype.syncData = function() {
     smartstore.registerSoup(false,
         this.soupName, [{
             path: "Id",
@@ -136,27 +140,27 @@ ObjectStorage.prototype.syncData = function() {
             path: "__local__",
             type: "string"
         }],
-        () => syncDown()
+        () => this.syncDown()
     );
 }
 
-ObjectStorage.prototype.reSyncData = function() {
-    syncUp(() => reSync());
+ObjectStore.prototype.reSyncData = function() {
+    this.syncUp(() => this.reSync());
 }
 
-ObjectStorage.prototype.addStoreChangeListener = function(listener) {
-    eventEmitter.addListener(SMARTSTORE_CHANGED, listener);
+ObjectStore.prototype.addStoreChangeListener = function(listener) {
+    this.eventEmitter.addListener(this.SMARTSTORE_CHANGED, listener);
 }
 
-ObjectStorage.prototype.saveContact = function(contact, callback) {
+ObjectStore.prototype.saveContact = function(contact, callback) {
     smartstore.upsertSoupEntries(false, "contacts", [contact],
         () => {
             callback();
-            emitSmartStoreChanged();
+            this.emitSmartStoreChanged();
         });
 }
 
-ObjectStorage.prototype.addContact = function(successCallback, errorCallback) {
+ObjectStore.prototype.addContact = function(successCallback, errorCallback) {
     var contact = {
         Id: "local_" + (new Date()).getTime(),
         FirstName: null,
@@ -179,13 +183,14 @@ ObjectStorage.prototype.addContact = function(successCallback, errorCallback) {
         errorCallback);
 }
 
-ObjectStorage.prototype.deleteContact = function(contact, successCallback, errorCallback) {
+ObjectStore.prototype.deleteContact = function(contact, successCallback, errorCallback) {
+    console.log('Deletig contact');
     smartstore.removeFromSoup(false, this.soupName, [contact._soupEntryId],
         successCallback,
         errorCallback);
 }
 
-ObjectStorage.prototype.searchContacts = function(query, successCallback, errorCallback) {
+ObjectStore.prototype.searchContacts = function(query, successCallback, errorCallback) {
     var querySpec;
 
     if (query === "") {
@@ -200,16 +205,16 @@ ObjectStorage.prototype.searchContacts = function(query, successCallback, errorC
     }
     var that = this;
 
-    lastStoreQuerySent++;
-    var currentStoreQuery = lastStoreQuerySent;
+    this.lastStoreQuerySent++;
+    var currentStoreQuery = this.lastStoreQuerySent;
 
     smartstore.querySoup(false,
         this.soupName,
         querySpec,
         (cursor) => {
             console.log("Response for #" + currentStoreQuery);
-            if (currentStoreQuery > lastStoreResponseReceived) {
-                lastStoreResponseReceived = currentStoreQuery;
+            if (currentStoreQuery > this.lastStoreResponseReceived) {
+                this.lastStoreResponseReceived = currentStoreQuery;
                 var contacts = cursor.currentPageOrderedEntries;
                 successCallback(contacts, currentStoreQuery);
             } else {
@@ -222,8 +227,16 @@ ObjectStorage.prototype.searchContacts = function(query, successCallback, errorC
         });
 }
 
+function contactStore(){
+  return new ObjectStore({
+    fieldlist : ["FirstName", "LastName", "Title", "Email", "MobilePhone", "Department", "HomePhone"],
+    objectName : "Contact",
+    soupName : "contacts"
+  });
+}
+
 module.exports = {
-    storageManager: ObjectStorage
+    contactStore: contactStore
 }
 /*
 module.exports = {

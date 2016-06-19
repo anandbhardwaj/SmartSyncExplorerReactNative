@@ -36,7 +36,7 @@ var {
 } = React;
 var Field = require('./Field');
 var storeMgr = require('./StoreMgr');
-var contactStore = new storeMgr();
+var contactStore = storeMgr.contactStore();
 var navigator;
 
 // State: contact
