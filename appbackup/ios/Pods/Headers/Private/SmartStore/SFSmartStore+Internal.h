@@ -1,1 +1,0 @@
-../../../../../../external/ios/libs/SmartStore/SmartStore/Classes/SFSmartStore+Internal.h

@@ -1,1 +1,0 @@
-../../../../../../external/ios/libs/SmartSync/SmartSync/Classes/Model/SFObjectType.h

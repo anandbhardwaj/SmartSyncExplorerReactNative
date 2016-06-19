@@ -1,1 +1,0 @@
-../../../../../../external/ios/libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Identity/SFIdentityData+Internal.h

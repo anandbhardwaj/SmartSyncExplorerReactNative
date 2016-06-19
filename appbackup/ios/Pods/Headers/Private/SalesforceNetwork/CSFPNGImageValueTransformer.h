@@ -1,1 +1,0 @@
-../../../../../../external/ios/libs/SalesforceNetwork/SalesforceNetwork/SalesforceNetwork/Classes/Utilities/ValueTransformers/CSFPNGImageValueTransformer.h

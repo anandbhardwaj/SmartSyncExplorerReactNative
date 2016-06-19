@@ -1,1 +1,0 @@
-../../../../../../external/ios/libs/SalesforceNetwork/SalesforceNetwork/SalesforceNetwork/Classes/Additions/SFUserAccount+SalesforceNetwork.h

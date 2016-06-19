@@ -1,1 +1,0 @@
-../../../../../../external/ios/libs/SalesforceReact/SalesforceReact/SalesforceReact.h

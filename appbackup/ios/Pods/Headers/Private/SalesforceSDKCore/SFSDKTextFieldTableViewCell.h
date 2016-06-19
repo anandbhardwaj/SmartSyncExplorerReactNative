@@ -1,1 +1,0 @@
-../../../../../../external/ios/libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Login/LoginHost/SFSDKTextFieldTableViewCell.h

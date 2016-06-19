@@ -1,1 +1,0 @@
-../../../../../../external/ios/libs/SalesforceRestAPI/SalesforceRestAPI/SalesforceRestAPI.h
